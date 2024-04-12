@@ -5,8 +5,8 @@ export default function About() {
     <>
       <main>
         <Navbar active="about"/>
+        {/* <h1 className="text-white">About</h1> */}
       </main>
-      <h1 className="text-white">About</h1>
     </>
   );
 };

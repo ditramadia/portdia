@@ -5,8 +5,8 @@ export default function Home() {
     <>
       <main>
         <Navbar active="work"/>
+        {/* <h1 className="text-white">Work</h1> */}
       </main>
-      <h1 className="text-white">Work</h1>
     </>
   );
 };

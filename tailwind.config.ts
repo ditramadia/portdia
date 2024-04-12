@@ -35,6 +35,9 @@ const config: Config = {
         'outline-variant': '#E0E1E4',
       }
     },
+    screens: {
+      'md': '768px',
+    }
   },
   plugins: [],
 };
