@@ -34,10 +34,17 @@ h6 {
   font-size: 1.25rem;
 }
 
-p {
+p,
+.body {
   font-family: "Poppins", system-ui;
   font-weight: 500;
   font-size: 1rem;
+}
+
+.body2 {
+  font-family: "Poppins", system-ui;
+  font-weight: 500;
+  font-size: 0.8rem;
 }
 
 .label {

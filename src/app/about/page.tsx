@@ -2,12 +2,12 @@
 
 import Navbar from "@/components/organism/Navbar";
 
-export default function Home() {
+export default function About() {
   return (
     <>
       <main>
-        <Navbar active="work"/>
-        {/* <h1 className="text-white">Work</h1> */}
+        <Navbar active="about"/>
+        {/* <h1 className="text-white">About</h1> */}
       </main>
     </>
   );
