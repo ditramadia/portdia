@@ -3,6 +3,7 @@ import '@fontsource/abril-fatface';
 import '@fontsource/poppins';
 import "./globals.css";
 import "@public/styles/typography.css";
+import "@public/styles/glassmorphism.css";
 
 export const metadata: Metadata = {
   title: "Portdia",
@@ -19,4 +20,4 @@ export default function RootLayout({
       <body>{children}</body>
     </html>
   );
-}
+};
