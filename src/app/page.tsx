@@ -152,28 +152,14 @@ export default function Home() {
         </div>
       </div>
 
-      <h1 className="heading-1 text-surface">Rest of the page</h1>
-      <h1 className="heading-1 text-surface">Rest of the page</h1>
-      <h1 className="heading-1 text-surface">Rest of the page</h1>
-      <h1 className="heading-1 text-surface">Rest of the page</h1>
-      <h1 className="heading-1 text-surface">Rest of the page</h1>
-      <h1 className="heading-1 text-surface">Rest of the page</h1>
-      <h1 className="heading-1 text-surface">Rest of the page</h1>
-      <h1 className="heading-1 text-surface">Rest of the page</h1>
-      <h1 className="heading-1 text-surface">Rest of the page</h1>
-      <h1 className="heading-1 text-surface">Rest of the page</h1>
-      <h1 className="heading-1 text-surface">Rest of the page</h1>
-      <h1 className="heading-1 text-surface">Rest of the page</h1>
-      <h1 className="heading-1 text-surface">Rest of the page</h1>
-      <h1 className="heading-1 text-surface">Rest of the page</h1>
-      <h1 className="heading-1 text-surface">Rest of the page</h1>
-      <h1 className="heading-1 text-surface">Rest of the page</h1>
-      <h1 className="heading-1 text-surface">Rest of the page</h1>
-      <h1 className="heading-1 text-surface">Rest of the page</h1>
-      <h1 className="heading-1 text-surface">Rest of the page</h1>
-      <h1 className="heading-1 text-surface">Rest of the page</h1>
-      <h1 className="heading-1 text-surface">Rest of the page</h1>
-      <h1 className="heading-1 text-surface">Rest of the page</h1>
+      <h1 className="heading-1 text-surface">.</h1>
+      <h1 className="heading-1 text-surface">.</h1>
+      <h1 className="heading-1 text-surface">.</h1>
+      <h1 className="heading-1 text-surface">Will there be singing</h1>
+      <h1 className="heading-1 text-surface">in the Dark Times?</h1>
+      <h1 className="heading-1 text-surface">Yes,</h1>
+      <h1 className="heading-1 text-surface">There will be singing.</h1>
+      <h1 className="heading-1 text-surface">About the dark times</h1>
 
       <Navbar active="work"/>
       
