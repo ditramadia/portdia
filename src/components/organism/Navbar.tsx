@@ -20,7 +20,7 @@ function Navbar(props: NavbarProps) {
         <Image src={Logo} alt="Portdia logo" height={56}/>
         <div className="hidden md:flex flex-col">
           <span className="body text-on-surface">Ditra Amadia.</span>
-          <span className="body2 text-on-surface-variant">Full-Stack Developer</span>
+          <span className="body-2 text-on-surface-variant">Full-Stack Developer</span>
         </div>
       </div>
 
