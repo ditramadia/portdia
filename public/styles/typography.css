@@ -1,37 +1,51 @@
-h1 {
+.abril-fatface {
+  font-family: "Abril Fatface", system-ui;
+}
+
+.poppins {
+  font-family: "Poppins", system-ui;
+}
+
+.heading-1 {
   font-family: "Abril Fatface", system-ui;
   font-weight: 400;
   font-size: 3.815rem;
 }
 
-h2 {
+.heading-2 {
   font-family: "Abril Fatface", system-ui;
   font-weight: 400;
   font-size: 3.052rem;
 }
 
-h3 {
+.heading-3 {
   font-family: "Abril Fatface", system-ui;
   font-weight: 400;
   font-size: 2.441rem;
 }
 
-h4 {
+.heading-4 {
   font-family: "Abril Fatface", system-ui;
   font-weight: 400;
   font-size: 1.953rem;
 }
 
-h5 {
+.heading-5 {
   font-family: "Abril Fatface", system-ui;
   font-weight: 400;
   font-size: 1.563rem;
 }
 
-h6 {
+.heading-6 {
   font-family: "Abril Fatface", system-ui;
   font-weight: 400;
   font-size: 1.25rem;
+}
+
+.display-5 {
+  font-family: "Poppins", system-ui;
+  font-weight: 500;
+  font-size: 1.563rem;
 }
 
 p,
@@ -41,7 +55,7 @@ p,
   font-size: 1rem;
 }
 
-.body2 {
+.body-2 {
   font-family: "Poppins", system-ui;
   font-weight: 500;
   font-size: 0.8rem;
