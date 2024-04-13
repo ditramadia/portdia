@@ -1,7 +1,8 @@
 "use client";
 
-import { useRef } from "react";
-import { Variants, easeInOut, motion, useScroll, useTransform } from "framer-motion";
+import { useEffect, useRef } from "react";
+import { Variants, motion, useScroll, useTransform } from "framer-motion";
+import Lenis from '@studio-freight/lenis';
 
 import Navbar from "@/components/organism/Navbar";
 
@@ -39,7 +40,7 @@ export default function Home() {
   }
 
   // Header 5 transition
-  const header5Range = [0, .3, .6, 1];
+  const header5Range = [0, .3, .9, 1];
   const header5YPos = useTransform(planetScrollYProgress, header5Range, ['50px', '50px', '0px', '0px']);
   const header5Opacity = useTransform(planetScrollYProgress, header5Range, [0, 0, 1, 1]);
 
@@ -74,6 +75,16 @@ export default function Home() {
       }
     }
   }
+
+  useEffect(() => {
+    // Lenis smooth scroll
+    const lenis = new Lenis()
+    function raf(time: number) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+    requestAnimationFrame(raf)
+  }, [])
 
   return (
     <main>
@@ -114,7 +125,7 @@ export default function Home() {
                 translateY: header5YPos
               }}
             >
-              I am a full stack developer specialized in <br />
+              I am a full-stack developer specialized in <br />
               <span className="text-tertiary abril-fatface italic">Front-End</span> and <span className="text-tertiary abril-fatface italic">Motion</span>
             </motion.h5>
           </div>
