@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { Variants, motion, useScroll, useTransform } from "framer-motion";
+import { Variants, easeInOut, motion, useScroll, useTransform } from "framer-motion";
 
 import Navbar from "@/components/organism/Navbar";
 
@@ -43,18 +43,54 @@ export default function Home() {
   const header5YPos = useTransform(planetScrollYProgress, header5Range, ['50px', '50px', '0px', '0px']);
   const header5Opacity = useTransform(planetScrollYProgress, header5Range, [0, 0, 1, 1]);
 
-  // Header 1 transition
+  // Header transition
+  const headerVariants: Variants = {
+    initial: {
+      opacity: 0,
+      translateY: '70px'
+    },
+    enter: {
+      opacity: 1,
+      translateY: '50px',
+      transition: {
+        duration: 1,
+        ease: 'easeInOut',
+        delay: 2
+      }
+    }
+  }
   const headerYPos = useTransform(planetScrollYProgress, header5Range, ['50px', '50px', '0px', '0px']);
+
+  // Planet transition
+  const planetVariants: Variants = {
+    initial: {
+      opacity: 0
+    },
+    enter: {
+      opacity: 1,
+      transition: {
+        duration: 2,
+        ease: 'easeInOut',
+      }
+    }
+  }
 
   return (
     <main>
 
-      <div ref={planet} className="w-full h-[800px] mt-48 flex justify-center md:h-[1100px]">
+      <motion.div 
+        ref={planet} 
+        className="w-full h-[800px] mt-48 flex justify-center md:h-[1100px]"
+        variants={planetVariants}
+        initial='initial'
+        whileInView='enter'
+        viewport={{ once: true }}
+      >
         <div className="absolute w-[800px] h-[800px] md:w-[1100px] md:h-[1100px]">
           <div className="absolute -inset-6 rounded-full bg-primary/30 blur-2xl" />
           <div className="absolute inset-0 rounded-full bg-gradient-to-b from-primary to-black to-70%" />
         </div>
-      </div>
+      </motion.div>
       
       <div className="absolute top-0 w-full h-[210vh] mx-auto md:h-[250vh] ">
         <div className="sticky top-0 w-full h-screen pt-32 pb-14 flex flex-col justify-center">
@@ -64,6 +100,10 @@ export default function Home() {
               style={{
                 translateY: headerYPos
               }}
+              variants={headerVariants}
+              initial='initial'
+              whileInView='enter'
+              viewport={{ once: true }}
             >
               Explore my Projects
             </motion.h1>
