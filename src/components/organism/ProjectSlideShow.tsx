@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Variants, motion, useMotionValue } from "framer-motion";
+import { useMotionValue, motion } from "framer-motion";
 
 interface ProjectSlideShowProps {
   title: string,
