@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Variants, motion } from "framer-motion";
+import { useMotionValue, motion } from "framer-motion";
 
 interface ProjectSlideShowProps {
   title: string,
@@ -15,25 +15,21 @@ function ProjectSlideShow(props: ProjectSlideShowProps) {
   const { title, description, imageName, imageAlt, url } = props; 
 
   const [mousePos, setMousePos] = useState({
-    x: 0,
-    y: 0
+    x: useMotionValue(0),
+    y: useMotionValue(0)
   });
 
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
   const mouseMove = (e: any) => {
-    setMousePos({
-      x: e.clientX - 48,
-      y: e.clientY - 48
-    });
+    const { clientX, clientY } = e;
+    mousePos.x.set(clientX - 48);
+    mousePos.y.set(clientY - 48);
   };
 
   useEffect(() => {
     window.addEventListener("mousemove", mouseMove);
-
-    return () => {
-      window.removeEventListener("mousemove", mouseMove);
-    }
+    return () => window.removeEventListener("mousemove", mouseMove);
   }, []);
 
   return (
@@ -44,14 +40,11 @@ function ProjectSlideShow(props: ProjectSlideShowProps) {
         scale: 0
       }}
       animate={{
-        x: mousePos.x,
-        y: mousePos.y,
         scale: isHovered ? 1 : 0
       }}
-      transition={{
-        duration: 0.5,
-        type: "tween",
-        ease: "easeInOut"
+      style={{
+        top: mousePos.y,
+        left: mousePos.x
       }}
     >
       <p className='text-[1.25rem] abril-fatface text-on-surface'>More</p>
