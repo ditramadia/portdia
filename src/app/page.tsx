@@ -4,10 +4,7 @@ import { useEffect, useRef } from "react";
 import { Variants, motion, useScroll, useTransform } from "framer-motion";
 import Lenis from '@studio-freight/lenis';
 
-import TocoThumbnail from "@public/images/toco-thumbnail.webp";
-
 import Navbar from "@/components/organism/Navbar";
-import Image from "next/image";
 import ProjectSlideShow from "@/components/organism/ProjectSlideShow";
 
 export default function Home() {
@@ -104,12 +101,12 @@ export default function Home() {
           viewport={{ once: true }}
         >
           <div className="absolute w-[800px] h-[800px] md:w-[1100px] md:h-[1100px]">
-            <div className="absolute -inset-6 rounded-full bg-primary/30 blur-2xl" />
-            <div className="absolute inset-0 rounded-full bg-gradient-to-b from-primary to-black to-70%" />
+            <div className="absolute z-20 -inset-6 rounded-full bg-primary/30 blur-2xl" />
+            <div className="absolute z-20 inset-0 rounded-full bg-gradient-to-b from-primary to-black to-70%" />
           </div>
         </motion.div>
         
-        <div className="absolute top-0 w-full h-[210vh] mx-auto md:h-[250vh] ">
+        <div className="absolute z-20 top-0 w-full h-[210vh] mx-auto md:h-[250vh] ">
           <div className="sticky top-0 w-full h-screen pt-32 pb-14 flex flex-col justify-center">
             <div className="mb-20">
               <motion.h1 
@@ -158,7 +155,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="h-[100vh] bg-surface-dim" />
+        <div className="relative z-10 h-[100vh] bg-surface-dim" />
 
         <ProjectSlideShow
           title="Toco"

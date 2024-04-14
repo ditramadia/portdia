@@ -13,7 +13,7 @@ function Navbar(props: NavbarProps) {
   const { active } = props;
 
   return (
-    <div className="fixed z-50 top-0 inset-x-0 w-full h-fit mt-5 md:mt-8">
+    <div className="fixed z-40 top-0 inset-x-0 w-full h-fit mt-5 md:mt-8">
       <div className="relative max-w-[1500px] w-full md:w-11/12 mx-auto flex items-center justify-center">
 
         <div className="absolute top-0 left-0 flex items-center gap-4">

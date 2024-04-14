@@ -1,6 +1,7 @@
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Variants, motion } from "framer-motion";
 
 interface ProjectSlideShowProps {
   title: string,
@@ -13,28 +14,75 @@ interface ProjectSlideShowProps {
 function ProjectSlideShow(props: ProjectSlideShowProps) {
   const { title, description, imageName, imageAlt, url } = props; 
 
-  return (
-    <Link href={url}>
-      <div className="h-[200vh] mx-auto w-full p-12 md:w-2/3">
-          <div className="sticky -z-10 top-44 h-[80vh]">
-            <h1 className="heading-1 text-on-surface">{title}</h1>
-            <p className="w-[250px] body text-on-surface">{description}</p>
-          </div>
-        </div>
+  const [mousePos, setMousePos] = useState({
+    x: 0,
+    y: 0
+  });
 
-        <div className="h-[400vh] mt-[-300vh]">
-          <div className="sticky -z-20 top-32 w-full h-[80vh] mx-auto flex justify-center md:w-2/3">
+  const [isHovered, setIsHovered] = useState<boolean>(false);
+
+  const mouseMove = (e: any) => {
+    setMousePos({
+      x: e.clientX - 48,
+      y: e.clientY - 48
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener("mousemove", mouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", mouseMove);
+    }
+  }, []);
+
+  return (
+    <>
+      <motion.div
+      className="fixed z-50 top-0 left-0 w-[96px] h-[96px] bg-primary/80 rounded-full flex justify-center items-center pointer-events-none"
+      initial={{
+        scale: 0
+      }}
+      animate={{
+        x: mousePos.x,
+        y: mousePos.y,
+        scale: isHovered ? 1 : 0
+      }}
+      transition={{
+        duration: 0.5,
+        type: "tween",
+        ease: "easeInOut"
+      }}
+    >
+      <p className='text-[1.25rem] abril-fatface text-on-surface'>More</p>
+    </motion.div>
+
+      <div className="h-[200vh] mx-auto w-full p-12 pointer-events-none md:w-2/3">
+        <div className="sticky z-10 top-44 h-[80vh]">
+          <h1 className="heading-1 text-on-surface">{title}</h1>
+          <p className="w-[250px] body text-on-surface">{description}</p>
+        </div>
+      </div>
+
+      <div className="h-[400vh] mt-[-300vh]">
+        <Link href={url}>
+          <div 
+            className="sticky bg-red-500 top-32 w-full h-[80vh] mx-auto flex justify-center cursor-none md:w-2/3"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
             <Image
               src={`/images/${imageName}`}
               alt={imageAlt}
               fill
               style={{objectFit:"cover"}} 
               />
-          </div>
-        </div>
+            </div>  
+        </Link>
+      </div>
 
-        <div className="h-[100vh] mt-[-100vh] bg-surface-dim" />
-    </Link>
+      <div className="relative z-10 h-[100vh] mt-[-100vh] bg-surface-dim" />
+    </>
   )
 }
 
