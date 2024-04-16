@@ -6,6 +6,7 @@ import Lenis from '@studio-freight/lenis';
 
 import Navbar from "@/components/organism/Navbar";
 import ProjectSlideShow from "@/components/organism/ProjectSlideShow";
+import Button from "@/components/atom/Button";
 
 export default function Home() {
   const planet = useRef(null);
@@ -196,6 +197,20 @@ export default function Home() {
           imageAlt="Open Ganteng thumbnail"
           url="/open-ganteng" 
         />
+
+        <div className="h-[100vh] flex flex-col items-center justify-center">
+          <h3 className="text-[1.953rem] poppins text-on-surface-variant -mb-[2]">Beyond this page</h3>
+          <h2 className="mb-5 heading-1 text-on-surface text-center">My Work on Github</h2>
+
+          <div className="relative w-28 h-[1px] mb-9 bg-on-surface">
+            <div className="absolute top-0 left-0 w-10 h-[1px] bg-outline" />
+            <div className="absolute top-0 right-0 w-10 h-[1px] bg-outline" />
+          </div>
+
+          <a href='https://github.com/ditramadia' target="_blank" rel="noopener noreferrer">
+              <Button text="EXPLORE MY GITHUB" />
+          </a>
+        </div>
 
       </main>
     </>
