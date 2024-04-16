@@ -78,6 +78,23 @@ export default function Home() {
     }
   }
 
+  // Github fade up transition
+  const githubVariants: Variants = {
+    initial: {
+      y: '70px',
+      opacity: 0
+    },
+    animate: {
+      y: '0',
+      opacity: 1,
+      transition: {
+        duration: 1,
+        ease: "easeInOut",
+        delay: 0.5
+      }
+    }
+  }
+
   useEffect(() => {
     // Lenis smooth scroll
     const lenis = new Lenis()
@@ -199,17 +216,45 @@ export default function Home() {
         />
 
         <div className="h-[100vh] flex flex-col items-center justify-center">
-          <h3 className="text-[1.953rem] poppins text-on-surface-variant -mb-[2]">Beyond this page</h3>
-          <h2 className="mb-5 heading-1 text-on-surface text-center">My Work on Github</h2>
+          <motion.h3
+            className="text-[1.953rem] poppins text-on-surface-variant -mb-[2]"
+            variants={githubVariants}
+            initial='initial'
+            whileInView='animate'
+            viewport={{ once: true }}
+          >
+            Beyond this page
+          </motion.h3>
+          <motion.h2 
+            className="mb-5 heading-1 text-on-surface text-center"
+            variants={githubVariants}
+            initial='initial'
+            whileInView='animate'
+            viewport={{ once: true }}
+          >
+            My Work on Github
+          </motion.h2>
 
-          <div className="relative w-28 h-[1px] mb-9 bg-on-surface">
+          <motion.div 
+            className="relative w-28 h-[1px] mb-9 bg-on-surface"
+            variants={githubVariants}
+            initial='initial'
+            whileInView='animate'
+            viewport={{ once: true }}
+          >
             <div className="absolute top-0 left-0 w-10 h-[1px] bg-outline" />
             <div className="absolute top-0 right-0 w-10 h-[1px] bg-outline" />
-          </div>
+          </motion.div>
 
-          <a href='https://github.com/ditramadia' target="_blank" rel="noopener noreferrer">
+          <motion.a 
+            href='https://github.com/ditramadia' target="_blank" rel="noopener noreferrer"
+            variants={githubVariants}
+            initial='initial'
+            whileInView='animate'
+            viewport={{ once: true }}
+          >
               <Button text="EXPLORE MY GITHUB" />
-          </a>
+          </motion.a>
         </div>
 
       </main>
