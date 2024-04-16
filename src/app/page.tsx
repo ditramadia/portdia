@@ -7,6 +7,7 @@ import Lenis from '@studio-freight/lenis';
 import Navbar from "@/components/organism/Navbar";
 import ProjectSlideShow from "@/components/organism/ProjectSlideShow";
 import Button from "@/components/atom/Button";
+import Footer from "@/components/organism/Footer";
 
 export default function Home() {
   const planet = useRef(null);
@@ -146,7 +147,7 @@ export default function Home() {
                   translateY: header5YPos
                 }}
               >
-                I am a full-stack developer specialized in <br />
+                I am a full-stack developer specializing in <br />
                 <span className="text-tertiary abril-fatface italic">Front-End</span> and <span className="text-tertiary abril-fatface italic">Motion</span>
               </motion.h5>
             </div>
@@ -193,7 +194,7 @@ export default function Home() {
 
         <ProjectSlideShow
           title="Impact Metanoia"
-          description="Website for IMPACT Metanoia, A national competition event for highschoolers"
+          description="Website of IMPACT Metanoia, A national competition event for highschoolers"
           imageName="impact-thumbnail.webp"
           imageAlt="Impact thumbnail"
           url="/impact" 
@@ -258,6 +259,10 @@ export default function Home() {
         </div>
 
       </main>
+
+      <div className="-mt-16">
+        <Footer />
+      </div>
     </>
   );
 };

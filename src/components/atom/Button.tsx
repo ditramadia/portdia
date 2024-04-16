@@ -1,9 +1,7 @@
-import React from 'react'
-
 interface ButtonProps {
   text: string,
   onClick?: () => void,
-}
+};
 
 function Button(props: ButtonProps) {
   const { text, onClick } = props;
@@ -15,7 +13,7 @@ function Button(props: ButtonProps) {
     >
       {text}
     </div>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;
