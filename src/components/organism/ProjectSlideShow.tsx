@@ -52,7 +52,7 @@ function ProjectSlideShow(props: ProjectSlideShowProps) {
 
       <div className="h-[200vh] mx-auto w-full p-12 pointer-events-none md:w-2/3">
         <div className="sticky z-10 top-44 h-[80vh]">
-          <h1 className="heading-1 text-on-surface">{title}</h1>
+          <h1 className="heading-3 text-on-surface md:heading-1">{title}</h1>
           <p className="w-[250px] body text-on-surface">{description}</p>
         </div>
       </div>

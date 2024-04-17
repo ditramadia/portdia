@@ -218,7 +218,7 @@ export default function Home() {
 
         <div className="h-[100vh] flex flex-col items-center justify-center">
           <motion.h3
-            className="text-[1.953rem] poppins text-on-surface-variant -mb-[2]"
+            className="text-[1.25rem] poppins text-on-surface-variant -mb-[2] md:text-[1.953rem]"
             variants={githubVariants}
             initial='initial'
             whileInView='animate'
@@ -227,7 +227,7 @@ export default function Home() {
             Beyond this page
           </motion.h3>
           <motion.h2 
-            className="mb-5 heading-1 text-on-surface text-center"
+            className="mb-5 heading-3 text-on-surface text-center md:heading-1"
             variants={githubVariants}
             initial='initial'
             whileInView='animate'
