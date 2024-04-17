@@ -3,6 +3,7 @@
 import SolidButton from "@/components/atom/SolidButton";
 import NavbarBack from "@/components/organism/NavbarBack";
 import ProjectThumbnail from "@/components/organism/ProjectThumbnail";
+import ProjectTitle from "@/components/organism/ProjectTitle";
 import Image from "next/image";
 
 function Toco() {
@@ -10,6 +11,10 @@ function Toco() {
     thumbnail: {
       projectThumbnail: 'toco-page-thumbnail.webp',
       projectThumbnailAlt: 'Toco thumbnail'
+    },
+    heading: {
+      title: 'Toco Language Learning App',
+      subtitle: 'Language learning platform with four micro-services'
     }
   }
 
@@ -27,8 +32,7 @@ function Toco() {
         />
 
         <div className="max-w-[1000px] w-11/12 mx-auto">
-          <h1 className="mb-7 heading-3 text-on-surface text-left leading-tight tracking-wider">Toco Language Learning App</h1>
-          <h2 className="mb-14 poppins text-[1.25rem] text-on-surface-variant text-left leading-tight tracking-wider">Language learning platform with four micro-services</h2>
+          <ProjectTitle title={projectData.heading.title} subtitle={projectData.heading.subtitle} />
           
           <div className="w-full h-[1px] bg-outline mb-7" />
           
