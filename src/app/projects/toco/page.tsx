@@ -1,10 +1,15 @@
 'use client';
 
+import Image from "next/image";
+
 import NavbarBack from "@/components/organism/NavbarBack";
 import ProjectThumbnail from "@/components/organism/ProjectThumbnail";
 import ProjectTitle from "@/components/organism/ProjectTitle";
 import ProjectContent from "@/components/organism/ProjectContent";
 import ProjectDetails from "@/components/organism/ProjectDetails";
+import ProjectOverview from "@/components/organism/ProjectOverview";
+import ProjectHighlights from "@/components/organism/ProjectHighlights";
+import Footer from "@/components/organism/Footer";
 
 function Toco() {
   const projectData = {
@@ -47,7 +52,55 @@ function Toco() {
         'Front-End Developer',
         'Back-End Developer',
       ]
-    }
+    },
+    overview: {
+      title: 'Overview',
+      subtitle: 'Your Path to Multilingual Excellence',
+      image: {
+        url: 'toco-overview.webp',
+        alt: 'Toco overview'
+      }
+    },
+    highlights: [
+      {
+        title: 'Learn from videos and exercises',
+        subtitle: 'Select a module and watch its videos to improve your language fluency. Videos are categorized by modules. At the end of each module, there is an exercise to test your understanding of the module.',
+        images: [
+          {
+            url: 'toco-section1-1.webp',
+            alt: 'Toco watch video'
+          },
+          {
+            url: 'toco-section1-2.webp',
+            alt: 'Toco exercise'
+          },
+        ]
+      },
+      {
+        title: 'Earn points and get awesome merchs',
+        subtitle: 'Points are earned by finishing a module or redeeming a voucher code. These points are then used buy merchandises available in our shop.',
+        images: [
+          {
+            url: 'toco-section2-1.webp',
+            alt: 'Toco merchandise shop'
+          },
+          {
+            url: 'toco-section2-2.webp',
+            alt: 'Toco transaction history'
+          },
+        ]
+      },
+      {
+        title: 'Manage content as admin',
+        subtitle: 'As an admin, you can manage available languages, modules, videos, exercises, merchandise, voucher code, and users',
+        images: [
+          {
+            url: 'toco-section3-1.webp',
+            alt: 'Toco Admin content management system'
+          },
+        ]
+      },
+    ]
   }
 
   return (
@@ -63,7 +116,7 @@ function Toco() {
           alt={projectData.thumbnail.projectThumbnailAlt} 
         />
 
-        <div className="max-w-[1000px] w-11/12 mb-14 mx-auto">
+        <div className="max-w-[1000px] w-11/12 mb-80 mx-auto">
           
           <ProjectTitle 
             title={projectData.heading.title} 
@@ -88,7 +141,29 @@ function Toco() {
 
         </div>
 
+        <div className="w-full h-fit flex flex-col items-center">
+
+          <ProjectOverview 
+            title={projectData.overview.title}
+            subtitle={projectData.overview.subtitle}
+            image={projectData.overview.image}
+          />
+
+          {
+            projectData.highlights.map((highlight) => (
+              <ProjectHighlights 
+                title={highlight.title}
+                subtitle={highlight.subtitle}
+                images={highlight.images}
+              />
+            ))
+          }
+
+        </div>
+
       </main>
+
+      <Footer />
     </>
   );
 };

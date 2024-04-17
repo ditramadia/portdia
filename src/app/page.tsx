@@ -227,7 +227,7 @@ export default function Home() {
             Beyond this page
           </motion.h3>
           <motion.h2 
-            className="mb-5 heading-3 text-on-surface text-center md:heading-1"
+            className="mb-5 heading-1 text-on-surface text-center"
             variants={githubVariants}
             initial='initial'
             whileInView='animate'
