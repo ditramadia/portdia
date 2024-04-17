@@ -1,7 +1,5 @@
 'use client';
 
-import Image from "next/image";
-
 import NavbarBack from "@/components/organism/NavbarBack";
 import ProjectThumbnail from "@/components/organism/ProjectThumbnail";
 import ProjectTitle from "@/components/organism/ProjectTitle";
@@ -11,7 +9,7 @@ import ProjectOverview from "@/components/organism/ProjectOverview";
 import ProjectHighlights from "@/components/organism/ProjectHighlights";
 import Footer from "@/components/organism/Footer";
 
-function Toco() {
+function page() {
   const projectData = {
     thumbnail: {
       projectThumbnail: 'toco-page-thumbnail.webp',
@@ -168,4 +166,4 @@ function Toco() {
   );
 };
 
-export default Toco;
+export default page;
