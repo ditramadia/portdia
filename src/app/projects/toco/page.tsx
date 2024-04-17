@@ -2,6 +2,7 @@
 
 import SolidButton from "@/components/atom/SolidButton";
 import NavbarBack from "@/components/organism/NavbarBack";
+import ProjectContent from "@/components/organism/ProjectContent";
 import ProjectThumbnail from "@/components/organism/ProjectThumbnail";
 import ProjectTitle from "@/components/organism/ProjectTitle";
 import Image from "next/image";
@@ -15,7 +16,13 @@ function Toco() {
     heading: {
       title: 'Toco Language Learning App',
       subtitle: 'Language learning platform with four micro-services'
-    }
+    },
+    content: [
+      'While taking web based application development course, we had an opportunity to create a multi-service web app. The mission was to make a web app that has a client-side application, admin application, and a secured transaction system.',
+      'We decided to create a language learning app where users can choose a variety of languages and then work through a series of video lessons and exercises to improve their vocabulary, phrases, grammar, and pronunciation. Users can track their progress over time. Admins are able to create courses, upload new video, create exercises, manage merchandise, and voucher codes. The transaction system uses gems as the currency and they are used to buy merchandises. We use a soap service to secure the transactions and communication between services.'
+    ],
+    code: 'https://github.com/ditramadia/toco',
+    site: ''
   }
 
   return (
@@ -32,17 +39,18 @@ function Toco() {
         />
 
         <div className="max-w-[1000px] w-11/12 mx-auto">
-          <ProjectTitle title={projectData.heading.title} subtitle={projectData.heading.subtitle} />
+          
+          <ProjectTitle 
+            title={projectData.heading.title} 
+            subtitle={projectData.heading.subtitle} 
+          />
           
           <div className="w-full h-[1px] bg-outline mb-7" />
-          
-          <p className="mb-7 body text-on-surface leading-relaxed">While taking web based application development course, we had an opportunity to create a multi-service web app. The mission was to make a web app that has a client-side application, admin application, and a secured transaction system.</p>
-          <p className="mb-7 body text-on-surface leading-relaxed">We decided to create a language learning app where users can choose a variety of languages and then work through a series of video lessons and exercises to improve their vocabulary, phrases, grammar, and pronunciation. Users can track their progress over time. Admins are able to create courses, upload new video, create exercises, manage merchandise, and voucher codes. The transaction system uses gems as the currency and they are used to buy merchandises. We use a soap service to secure the transactions and communication between services.</p>
-          <div className="mb-14 flex gap-4">
-            <div className="w-28 h-12">
-              <SolidButton text="Code" iconRight="ic-arrow-link.svg" />
-            </div>
-          </div>
+
+          <ProjectContent 
+            content={projectData.content}
+            code={projectData.code}
+          />
           
           <div className="w-full h-[1px] bg-outline mb-7" />
 
