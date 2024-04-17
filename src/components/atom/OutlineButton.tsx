@@ -8,7 +8,7 @@ function Button(props: ButtonProps) {
 
   return (
     <div
-      className='py-3 px-10 rounded-full border-solid border-[2px] border-primary flex justify-center items-center text-primary body transition-colors duration-300 ease-in-out hover:bg-primary hover:text-surface-dim'
+      className='w-full h-full rounded-full border-solid border-[2px] border-primary flex justify-center items-center text-primary body transition-colors duration-300 ease-in-out hover:bg-primary hover:text-surface-dim'
       onClick={onClick}
     >
       {text}

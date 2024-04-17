@@ -6,7 +6,7 @@ import Lenis from '@studio-freight/lenis';
 
 import Navbar from "@/components/organism/Navbar";
 import ProjectSlideShow from "@/components/organism/ProjectSlideShow";
-import Button from "@/components/atom/Button";
+import OutlineButton from "@/components/atom/OutlineButton";
 import Footer from "@/components/organism/Footer";
 
 export default function Home() {
@@ -181,7 +181,7 @@ export default function Home() {
           description="Language learning platform with four microservices"
           imageName="toco-thumbnail.webp"
           imageAlt="Toco thumbnail"
-          url="/toco" 
+          url="/projects/toco" 
         />
 
         <ProjectSlideShow
@@ -189,7 +189,7 @@ export default function Home() {
           description="Official website of Literacy Power Indonesia"
           imageName="literacy-power-thumbnail.webp"
           imageAlt="Literacy Power thumbnail"
-          url="/literacy-power" 
+          url="projects/literacy-power" 
         />
 
         <ProjectSlideShow
@@ -197,7 +197,7 @@ export default function Home() {
           description="Website of IMPACT Metanoia, A national competition event for highschoolers"
           imageName="impact-thumbnail.webp"
           imageAlt="Impact thumbnail"
-          url="/impact" 
+          url="projects/impact" 
         />
         
         <ProjectSlideShow
@@ -205,7 +205,7 @@ export default function Home() {
           description="Wallet mobile app"
           imageName="bondoman-thumbnail.webp"
           imageAlt="Bondoman thumbnail"
-          url="/bondoman" 
+          url="projects/bondoman" 
         />
 
         <ProjectSlideShow
@@ -213,7 +213,7 @@ export default function Home() {
           description="Web based graphic editor software"
           imageName="open-ganteng-thumbnail.webp"
           imageAlt="Open Ganteng thumbnail"
-          url="/open-ganteng" 
+          url="projects/open-ganteng" 
         />
 
         <div className="h-[100vh] flex flex-col items-center justify-center">
@@ -254,7 +254,9 @@ export default function Home() {
             whileInView='animate'
             viewport={{ once: true }}
           >
-              <Button text="EXPLORE MY GITHUB" />
+            <div className="w-56 h-12">
+              <OutlineButton text="EXPLORE MY GITHUB" />
+            </div>
           </motion.a>
         </div>
 

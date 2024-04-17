@@ -1,9 +1,10 @@
 import Image from "next/image";
 
 import Logo from "@public/images/portdia-logo.png";
-import LinkArrow from "@public/icons/ic-arrow.svg";
+import LinkArrow from "@public/icons/ic-arrow-link.svg";
 
 import NavToggle from "../molecule/NavToggle";
+import GlassButton from "../atom/GlassButton";
 
 interface NavbarProps {
   active: "work" | "about",
@@ -28,12 +29,12 @@ function Navbar(props: NavbarProps) {
 
         <a href="https://drive.google.com/file/d/1CRswzCp9LZNwNbTxMcPSmIMR6LAXf0Ng/view?usp=sharing" rel="noopener noreferrer" target="_blank">
           <div className="absolute top-0 right-0 h-full flex items-center">
-          
-            <div className="w-12 h-12 mr-2 flex justify-center items-center glass-blur rounded-full cursor-pointer md:hidden">
-              <Image src={LinkArrow} alt="Arrow icon" height={20} className="w-auto"/>
+
+            <div className="w-12 h-12 md:hidden">
+              <GlassButton iconRight="ic-arrow-link.svg" />
             </div>
 
-            <div className="hidden px-6 py-3 rounded-full md:flex gap-2 text-on-surface body transition-colors ease-in-out duration-500 hover:bg-primary">
+            <div className="hidden px-6 py-3 rounded-full text-on-surface body transition-colors ease-in-out duration-500 hover:bg-primary md:flex gap-2">
               Resume
               <Image src={LinkArrow} alt="Link arrow" height={16} className="w-auto"/>
             </div>
