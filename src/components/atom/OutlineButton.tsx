@@ -1,9 +1,9 @@
-interface ButtonProps {
+interface OutlineButtonProps {
   text: string,
   onClick?: () => void,
 };
 
-function Button(props: ButtonProps) {
+function OutlineButton(props: OutlineButtonProps) {
   const { text, onClick } = props;
 
   return (
@@ -16,4 +16,4 @@ function Button(props: ButtonProps) {
   );
 };
 
-export default Button;
+export default OutlineButton;
