@@ -6,6 +6,8 @@ import Lenis from '@studio-freight/lenis';
 
 import Navbar from "@/components/organism/Navbar";
 import ProjectSlideShow from "@/components/organism/ProjectSlideShow";
+import OutlineButton from "@/components/atom/OutlineButton";
+import Footer from "@/components/organism/Footer";
 
 export default function Home() {
   const planet = useRef(null);
@@ -77,6 +79,23 @@ export default function Home() {
     }
   }
 
+  // Github fade up transition
+  const githubVariants: Variants = {
+    initial: {
+      y: '70px',
+      opacity: 0
+    },
+    animate: {
+      y: '0',
+      opacity: 1,
+      transition: {
+        duration: 1,
+        ease: "easeInOut",
+        delay: 0.5
+      }
+    }
+  }
+
   useEffect(() => {
     // Lenis smooth scroll
     const lenis = new Lenis()
@@ -128,7 +147,7 @@ export default function Home() {
                   translateY: header5YPos
                 }}
               >
-                I am a full-stack developer specialized in <br />
+                I am a full-stack developer specializing in <br />
                 <span className="text-tertiary abril-fatface italic">Front-End</span> and <span className="text-tertiary abril-fatface italic">Motion</span>
               </motion.h5>
             </div>
@@ -162,7 +181,7 @@ export default function Home() {
           description="Language learning platform with four microservices"
           imageName="toco-thumbnail.webp"
           imageAlt="Toco thumbnail"
-          url="/toco" 
+          url="/projects/toco" 
         />
 
         <ProjectSlideShow
@@ -170,15 +189,15 @@ export default function Home() {
           description="Official website of Literacy Power Indonesia"
           imageName="literacy-power-thumbnail.webp"
           imageAlt="Literacy Power thumbnail"
-          url="/literacy-power" 
+          url="projects/literacy-power" 
         />
 
         <ProjectSlideShow
           title="Impact Metanoia"
-          description="Website for IMPACT Metanoia, A national competition event for highschoolers"
+          description="Website of IMPACT Metanoia, A national competition event for highschoolers"
           imageName="impact-thumbnail.webp"
           imageAlt="Impact thumbnail"
-          url="/impact" 
+          url="projects/impact" 
         />
         
         <ProjectSlideShow
@@ -186,7 +205,7 @@ export default function Home() {
           description="Wallet mobile app"
           imageName="bondoman-thumbnail.webp"
           imageAlt="Bondoman thumbnail"
-          url="/bondoman" 
+          url="projects/bondoman" 
         />
 
         <ProjectSlideShow
@@ -194,10 +213,58 @@ export default function Home() {
           description="Web based graphic editor software"
           imageName="open-ganteng-thumbnail.webp"
           imageAlt="Open Ganteng thumbnail"
-          url="/open-ganteng" 
+          url="projects/open-ganteng" 
         />
 
+        <div className="h-[100vh] flex flex-col items-center justify-center">
+          <motion.h3
+            className="text-[1.25rem] poppins text-on-surface-variant -mb-[2] md:text-[1.953rem]"
+            variants={githubVariants}
+            initial='initial'
+            whileInView='animate'
+            viewport={{ once: true }}
+          >
+            Beyond this page
+          </motion.h3>
+          <motion.h2 
+            className="mb-5 heading-1 text-on-surface text-center"
+            variants={githubVariants}
+            initial='initial'
+            whileInView='animate'
+            viewport={{ once: true }}
+          >
+            My Work on Github
+          </motion.h2>
+
+          <motion.div 
+            className="relative w-28 h-[1px] mb-9 bg-on-surface"
+            variants={githubVariants}
+            initial='initial'
+            whileInView='animate'
+            viewport={{ once: true }}
+          >
+            <div className="absolute top-0 left-0 w-10 h-[1px] bg-outline" />
+            <div className="absolute top-0 right-0 w-10 h-[1px] bg-outline" />
+          </motion.div>
+
+          <motion.a 
+            href='https://github.com/ditramadia' target="_blank" rel="noopener noreferrer"
+            variants={githubVariants}
+            initial='initial'
+            whileInView='animate'
+            viewport={{ once: true }}
+          >
+            <div className="w-56 h-12">
+              <OutlineButton text="EXPLORE MY GITHUB" />
+            </div>
+          </motion.a>
+        </div>
+
       </main>
+
+      <div className="-mt-16">
+        <Footer />
+      </div>
     </>
   );
 };
