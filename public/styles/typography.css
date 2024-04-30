@@ -1,6 +1,6 @@
-@tailwind base;
+@tailwind components;
 
-@layer base {
+@layer components {
   .abril-fatface {
     font-family: "Abril Fatface", system-ui;
   }

@@ -8,6 +8,7 @@ import "@public/styles/scrollbar.css";
 import "@public/styles/typography.css";
 import "@public/styles/glassmorphism.css";
 import "@public/styles/motion.css";
+import "@public/styles/buttons.css";
 
 export const metadata: Metadata = {
   title: "Portdia",

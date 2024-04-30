@@ -1,0 +1,23 @@
+@tailwind components;
+
+@layer components {
+  .button-spacing-sm {
+    @apply px-4 py-2 gap-2;
+  }
+
+  .button-spacing-md {
+    @apply px-6 py-3 gap-2;
+  }
+
+  .button-spacing-lg {
+    @apply px-8 py-4 gap-3;
+  }
+
+  .button-disabled {
+    @apply opacity-50 pointer-events-none cursor-default;
+  }
+
+  .button-enabled {
+    @apply opacity-100 cursor-pointer;
+  }
+}

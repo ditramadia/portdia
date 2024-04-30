@@ -8,8 +8,11 @@ interface NavToggleProps {
 function NavToggle(props: NavToggleProps) {
   const { active } = props;
   const router = useRouter();
+
+  // Navigation state
   const [activeState, setActiveState] = useState<"work" | "about">(active);
 
+  // Handle navigate
   const handleNavigate = (destination: 'work' | 'about') => {
     if (activeState === destination) return;
     setActiveState(destination);
@@ -25,13 +28,13 @@ function NavToggle(props: NavToggleProps) {
       </div>
       <div className={`absolute top-2 left-2 w-24 h-10 bg-white/10 rounded-full transition-transform ease-in-out duration-500 ${activeState === 'about' ? 'translate-x-[100px]' : 'translate-x-0'}`} />
       <div 
-        className={`w-24 bg-gradient-to-r ${activeState === 'work' ? '' : 'hover:from-white/10 hover:to-transparent'} px-2 py-2 rounded-full flex items-center justify-center body text-on-surface cursor-pointer`}
+        className={`w-24 bg-gradient-to-r ${activeState === 'work' ? '' : 'hover:from-white/10 hover:to-transparent'} px-2 py-2 rounded-full flex items-center justify-center body-1 text-on-surface cursor-pointer`}
         onClick={() => handleNavigate('work')}
       >
         Work
       </div>
       <div 
-        className={`w-24 bg-gradient-to-l ${activeState === 'about' ? '' : 'hover:from-white/10 hover:to-transparent'} px-2 py-2 rounded-full flex items-center justify-center body text-on-surface cursor-pointer`}
+        className={`w-24 bg-gradient-to-l ${activeState === 'about' ? '' : 'hover:from-white/10 hover:to-transparent'} px-2 py-2 rounded-full flex items-center justify-center body-1 text-on-surface cursor-pointer`}
         onClick={() => handleNavigate('about')}
       >
         About
