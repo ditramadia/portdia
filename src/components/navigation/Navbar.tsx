@@ -1,10 +1,11 @@
 import Image from "next/image";
 
 import Logo from "@public/images/portdia-logo.png";
-import LinkArrow from "@public/icons/ic-arrow-link.svg";
+import ArrowLinkIcon from "@/components/icons/ArrowLinkIcon";
 
 import NavToggle from "./NavToggle";
 import GlassButton from "../button/GlassButton";
+import PrimaryButton from "../button/PrimaryButton";
 
 interface NavbarProps {
   active: "work" | "about",
@@ -14,13 +15,13 @@ function Navbar(props: NavbarProps) {
   const { active } = props;
 
   return (
-    <div className="fixed z-40 top-0 inset-x-0 w-full h-fit mt-5 md:mt-8">
-      <div className="relative max-w-[1500px] w-full md:w-11/12 mx-auto flex items-center justify-center">
+    <div className="fixed z-40 top-0 inset-x-0 container bg-red-500 h-fit mx-auto mt-5 md:mt-8">
+      <div className="relative w-full md:w-11/12 mx-auto flex items-center justify-center">
 
         <div className="absolute top-0 left-0 flex items-center gap-4">
           <Image src={Logo} alt="Portdia logo" height={56} draggable={false}/>
           <div className="hidden md:flex flex-col">
-            <span className="body text-on-surface">Ditra Amadia.</span>
+            <span className="body-1 text-on-surface">Ditra Amadia.</span>
             <span className="body-2 text-on-surface-variant">Full-Stack Developer</span>
           </div>
         </div>
@@ -34,9 +35,14 @@ function Navbar(props: NavbarProps) {
               <GlassButton iconRight="ic-arrow-link.svg" />
             </div>
 
-            <div className="hidden px-6 py-3 rounded-full text-on-surface body transition-colors ease-in-out duration-500 hover:bg-primary md:flex gap-2">
-              Resume
-              <Image src={LinkArrow} alt="Link arrow" height={16} className="w-auto"/>
+            <div className="hidden w-fit md:inline-block">
+              <PrimaryButton 
+                text="Resume"
+                rightIcon={<ArrowLinkIcon width="1rem" height="1rem" />}
+                type="text"
+                size="md"
+                roundness="full"
+              />
             </div>
 
           </div>

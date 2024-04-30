@@ -2,32 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply bg-surface-dim;
+  }
+
+  a {
+    @apply cursor-default;
+  }
 }
 
-body {
-  @apply bg-surface-dim;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #131315;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-  background-color: #131315;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #313236;
-  border-radius: 5px;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer components {
+  .container {
+    @apply max-w-[1400px] w-11/12 md:w-full;
   }
 }

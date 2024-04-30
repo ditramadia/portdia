@@ -1,0 +1,7 @@
+@tailwind utilities;
+
+@layer utilities {
+  .transition-500 {
+    @apply transition-all ease-in-out duration-500;
+  }
+}

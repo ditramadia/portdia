@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
+
 import '@fontsource/abril-fatface';
 import '@fontsource/poppins';
+
 import "./globals.css";
+import "@public/styles/scrollbar.css";
 import "@public/styles/typography.css";
 import "@public/styles/glassmorphism.css";
+import "@public/styles/motion.css";
 
 export const metadata: Metadata = {
   title: "Portdia",
