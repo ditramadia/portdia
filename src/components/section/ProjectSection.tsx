@@ -1,6 +1,7 @@
 import projects from "@/data/projectBrief";
 
 import WebProjectCard from "@/components/card/WebProjectCard";
+import MobileProjectCard from "@/components/card/MobileProjectCard";
 
 const ProjectSection = () => {
   return (
@@ -19,12 +20,24 @@ const ProjectSection = () => {
                 {project.company} - {project.releaseDate}
               </p>
             </div>
-            <WebProjectCard
-              cardTitle={project.summary}
-              cardSubtitle={project.description}
-              url={project.url}
-              thumbnail={project.thumbnail}
-            />
+            {
+              project.type === 'webapp' &&
+              <WebProjectCard
+                cardTitle={project.summary}
+                cardSubtitle={project.description}
+                url={project.url}
+                thumbnail={project.thumbnail}
+              />
+            }
+            {
+              project.type === 'mobileapp' &&
+              <MobileProjectCard
+                cardTitle={project.summary}
+                cardSubtitle={project.description}
+                url={project.url}
+                thumbnail={project.thumbnail}
+              />
+            }
           </div>
         ))
       }

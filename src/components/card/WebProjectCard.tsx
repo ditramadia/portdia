@@ -52,9 +52,7 @@ const WebProjectCard = (props: WebProjectCardProps) => {
       </div>
 
       {/* Gradient background */}
-      <div className="w-5/12 h-full bg-gradient-to-br from-40% from-primary via-secondary to-tertiary">
-
-      </div>
+      <div className="w-5/12 h-full bg-gradient-to-br from-40% from-primary via-secondary to-tertiary" />
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import { Variants } from "framer-motion";
 
-const fadeUp: Variants = {
+const SlideUp: Variants = {
   initial: {
     y: '64px',
     opacity: 0
@@ -16,4 +16,4 @@ const fadeUp: Variants = {
   })
 }
 
-export default fadeUp;
+export default SlideUp;
