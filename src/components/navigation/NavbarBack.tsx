@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Variants, motion } from "framer-motion";
 
-import GlassButton from "../atom/GlassButton";
+import GlassButton from "../button/GlassButton";
 
 interface NavbarBackProps {
   url: string

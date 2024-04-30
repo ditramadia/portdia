@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useMotionValue, motion } from "framer-motion";
 
-interface ProjectSlideShowProps {
+interface ProjectShowcaseProps {
   title: string,
   description: string,
   imageName: string,
@@ -11,7 +11,7 @@ interface ProjectSlideShowProps {
   url: string,
 };
 
-function ProjectSlideShow(props: ProjectSlideShowProps) {
+function ProjectShowcase(props: ProjectShowcaseProps) {
   const { title, description, imageName, imageAlt, url } = props; 
 
   const [mousePos, setMousePos] = useState({
@@ -76,7 +76,7 @@ function ProjectSlideShow(props: ProjectSlideShowProps) {
 
       <div className="relative z-10 h-[100vh] mt-[-100vh] bg-surface-dim" />
     </>
-  )
-}
+  );
+};
 
-export default ProjectSlideShow
+export default ProjectShowcase;

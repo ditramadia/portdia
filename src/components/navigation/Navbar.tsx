@@ -3,8 +3,8 @@ import Image from "next/image";
 import Logo from "@public/images/portdia-logo.png";
 import LinkArrow from "@public/icons/ic-arrow-link.svg";
 
-import NavToggle from "../molecule/NavToggle";
-import GlassButton from "../atom/GlassButton";
+import NavToggle from "./NavToggle";
+import GlassButton from "../button/GlassButton";
 
 interface NavbarProps {
   active: "work" | "about",

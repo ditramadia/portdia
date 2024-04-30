@@ -1,11 +1,11 @@
 'use client';
 
-import NavbarBack from "@/components/organism/NavbarBack";
-import ProjectThumbnail from "@/components/organism/ProjectThumbnail";
-import ProjectTitle from "@/components/organism/ProjectTitle";
-import ProjectContent from "@/components/organism/ProjectContent";
-import ProjectDetails from "@/components/organism/ProjectDetails";
-import Footer from "@/components/organism/Footer";
+import NavbarBack from "@/components/navigation/NavbarBack";
+import ProjectThumbnail from "@/components/display/ProjectThumbnail";
+import ProjectTitle from "@/components/display/ProjectTitle";
+import ProjectContent from "@/components/display/ProjectContent";
+import ProjectDetails from "@/components/display/ProjectDetails";
+import Footer from "@/components/navigation/Footer";
 
 function page() {
   const projectData = {

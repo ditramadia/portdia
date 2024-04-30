@@ -4,10 +4,10 @@ import { useEffect, useRef } from "react";
 import { Variants, motion, useScroll, useTransform } from "framer-motion";
 import Lenis from '@studio-freight/lenis';
 
-import Navbar from "@/components/organism/Navbar";
-import ProjectSlideShow from "@/components/organism/ProjectSlideShow";
-import OutlineButton from "@/components/atom/OutlineButton";
-import Footer from "@/components/organism/Footer";
+import Navbar from "@/components/navigation/Navbar";
+import ProjectSlideShow from "@/components/card/ProjectSlideShow";
+import OutlineButton from "@/components/button/OutlineButton";
+import Footer from "@/components/navigation/Footer";
 
 export default function Home() {
   const planet = useRef(null);

@@ -1,4 +1,4 @@
-import SolidButton from "../atom/SolidButton"
+import SolidButton from "../button/SolidButton"
 
 interface ProjectContentProps {
   content: string[],
