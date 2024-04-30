@@ -1,68 +1,72 @@
-.abril-fatface {
-  font-family: "Abril Fatface", system-ui;
-}
+@tailwind components;
 
-.poppins {
-  font-family: "Poppins", system-ui;
-}
+@layer components {
+  .abril-fatface {
+    font-family: "Abril Fatface", system-ui;
+  }
 
-.heading-1 {
-  font-family: "Abril Fatface", system-ui;
-  font-weight: 400;
-  font-size: 3.815rem;
-}
+  .poppins {
+    font-family: "Poppins", system-ui;
+  }
 
-.heading-2 {
-  font-family: "Abril Fatface", system-ui;
-  font-weight: 400;
-  font-size: 3.052rem;
-}
+  .heading-1 {
+    font-family: "Abril Fatface", system-ui;
+    font-weight: 400;
+    font-size: 3.815rem;
+  }
 
-.heading-3 {
-  font-family: "Abril Fatface", system-ui;
-  font-weight: 400;
-  font-size: 2.441rem;
-}
+  .heading-2 {
+    font-family: "Abril Fatface", system-ui;
+    font-weight: 400;
+    font-size: 3.052rem;
+  }
 
-.heading-4 {
-  font-family: "Abril Fatface", system-ui;
-  font-weight: 400;
-  font-size: 1.953rem;
-}
+  .heading-3 {
+    font-family: "Abril Fatface", system-ui;
+    font-weight: 400;
+    font-size: 2.441rem;
+  }
 
-.heading-5 {
-  font-family: "Abril Fatface", system-ui;
-  font-weight: 400;
-  font-size: 1.563rem;
-}
+  .heading-4 {
+    font-family: "Abril Fatface", system-ui;
+    font-weight: 400;
+    font-size: 1.953rem;
+  }
 
-.heading-6 {
-  font-family: "Abril Fatface", system-ui;
-  font-weight: 400;
-  font-size: 1.25rem;
-}
+  .heading-5 {
+    font-family: "Abril Fatface", system-ui;
+    font-weight: 400;
+    font-size: 1.563rem;
+  }
 
-.display-5 {
-  font-family: "Poppins", system-ui;
-  font-weight: 500;
-  font-size: 1.563rem;
-}
+  .heading-6 {
+    font-family: "Abril Fatface", system-ui;
+    font-weight: 400;
+    font-size: 1.25rem;
+  }
 
-p,
-.body {
-  font-family: "Poppins", system-ui;
-  font-weight: 500;
-  font-size: 1rem;
-}
+  .display-5 {
+    font-family: "Poppins", system-ui;
+    font-weight: 500;
+    font-size: 1.563rem;
+  }
 
-.body-2 {
-  font-family: "Poppins", system-ui;
-  font-weight: 500;
-  font-size: 0.8rem;
-}
+  p,
+  .body-1 {
+    font-family: "Poppins", system-ui;
+    font-weight: 500;
+    font-size: 1rem;
+  }
 
-.label {
-  font-family: "Poppins", system-ui;
-  font-weight: 700;
-  font-size: 0.8rem;
+  .body-2 {
+    font-family: "Poppins", system-ui;
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
+
+  .label {
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+    font-size: 0.8rem;
+  }
 }
