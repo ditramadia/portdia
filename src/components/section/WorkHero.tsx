@@ -25,11 +25,11 @@ const WorkHero = () => {
   const headerVariants: Variants = {
     initial: {
       opacity: 0,
-      translateY: "70px",
+      y: "72px",
     },
     enter: {
       opacity: 1,
-      translateY: "50px",
+      y: "0px",
       transition: {
         duration: 1,
         ease: "easeInOut",
