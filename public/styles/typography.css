@@ -52,13 +52,13 @@
   }
 
   p,
-  .body-1 {
+  .body-m {
     font-family: "Poppins", system-ui;
     font-weight: 500;
     font-size: 1rem;
   }
 
-  .body-2 {
+  .body-s {
     font-family: "Poppins", system-ui;
     font-weight: 500;
     font-size: 0.8rem;

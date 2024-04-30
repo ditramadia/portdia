@@ -101,7 +101,7 @@ const WorkHero = () => {
       >
         <div className="absolute w-[800px] h-[800px] md:w-[1100px] md:h-[1100px]">
           <div className="absolute z-20 -inset-6 rounded-full bg-primary/30 blur-2xl" />
-          <div className="absolute z-20 inset-0 rounded-full bg-gradient-to-b from-primary to-black to-70%" />
+          <div className="absolute z-20 inset-0 rounded-full bg-gradient-to-b from-primary to-neutral-900 to-70%" />
         </div>
       </motion.div>
 
@@ -109,7 +109,7 @@ const WorkHero = () => {
         <div className="sticky top-0 w-full h-screen pt-32 pb-14 flex flex-col justify-center">
           <div className="mb-20">
             <motion.h1
-              className="heading-1 text-center tracking-[0.25em] leading-tight text-on-surface"
+              className="heading-1 text-center tracking-[0.25em] leading-tight text-light"
               style={{
                 translateY: headerYPos,
               }}
@@ -121,7 +121,7 @@ const WorkHero = () => {
               Explore my Projects
             </motion.h1>
             <motion.h5
-              className="mt-10 display-5 text-center text-on-surface"
+              className="mt-10 display-5 text-center text-light"
               style={{
                 opacity: header5Opacity,
                 translateY: header5YPos,
@@ -143,12 +143,12 @@ const WorkHero = () => {
             }}
           >
             <motion.div
-              className="w-[1px] bg-on-surface"
+              className="w-[1px] bg-neutral-100"
               variants={scrollBarVariants}
               animate="default"
             />
             <motion.p
-              className="body text-on-surface"
+              className="body text-light"
               variants={scrollTextVariants}
               animate="default"
             >

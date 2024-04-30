@@ -1,8 +1,7 @@
 import { Variants } from "framer-motion";
 
-const fadeUp: Variants = {
+const fadeIn: Variants = {
   initial: {
-    y: '64px',
     opacity: 0
   },
   animate: i => ({
@@ -16,4 +15,4 @@ const fadeUp: Variants = {
   })
 }
 
-export default fadeUp;
+export default fadeIn;
