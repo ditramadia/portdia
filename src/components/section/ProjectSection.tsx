@@ -5,7 +5,7 @@ import MobileProjectCard from "@/components/card/MobileProjectCard";
 
 const ProjectSection = () => {
   return (
-    <div className="container-base mx-auto flex flex-col gap-28 items-center lg:gap-96">
+    <div className="container-base mx-auto flex flex-col gap-28 items-center lg:gap-48">
       {
         projects.map((project, i) => (
           <div
