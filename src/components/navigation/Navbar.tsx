@@ -22,8 +22,8 @@ function Navbar(props: NavbarProps) {
         <div className="absolute top-0 left-0 flex items-center gap-4">
           <Image src={Logo} alt="Portdia logo" height={56} draggable={false}/>
           <div className="hidden md:flex flex-col">
-            <span className="body-1 text-on-surface">Ditra Amadia.</span>
-            <span className="body-2 text-on-surface-variant">Full-Stack Developer</span>
+            <span className="body-m text-light">Ditra Amadia.</span>
+            <span className="body-s text-dim">Full-Stack Developer</span>
           </div>
         </div>
 

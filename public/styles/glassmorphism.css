@@ -2,10 +2,10 @@
 
 @layer base {
   .glass-blur {
-    @apply bg-white/10 border-[1px] border-solid border-white/10 backdrop-blur-lg;
+    @apply bg-glass/10 border-[1px] border-solid border-glass-outline/20 backdrop-blur-lg;
   }
 
   .glass-blur-no-outline {
-    @apply bg-white/10 backdrop-blur-md;
+    @apply bg-glass/10 backdrop-blur-md;
   }
 }

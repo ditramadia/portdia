@@ -1,33 +1,16 @@
-import { Variants, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
-import fadeUp from "@/transitions/FadeUp";
+import slideUp from "@/transitions/SlideUp";
 
-import PrimaryButton from "../button/PrimaryButton";
+import PrimaryButton from "@/components/button/PrimaryButton";
 
 const GithubReferrer = () => {
-
-  // Github fade up transition
-  const githubVariants: Variants = {
-    initial: {
-      y: '70px',
-      opacity: 0
-    },
-    animate: {
-      y: '0',
-      opacity: 1,
-      transition: {
-        duration: 1,
-        ease: "easeInOut",
-        delay: 0.5
-      }
-    }
-  }
 
   return (
     <div className="h-[100vh] flex flex-col items-center justify-center">
           <motion.h3
-            className="text-[1.25rem] poppins text-on-surface-variant -mb-[2] md:text-[1.953rem]"
-            variants={fadeUp}
+            className="text-[1.25rem] poppins text-dim -mb-[2] md:text-[1.953rem]"
+            variants={slideUp}
             custom={.5}
             initial='initial'
             whileInView='animate'
@@ -36,8 +19,8 @@ const GithubReferrer = () => {
             Beyond this page
           </motion.h3>
           <motion.h2 
-            className="mb-5 heading-1 text-on-surface text-center"
-            variants={fadeUp}
+            className="mb-5 heading-1 text-light text-center"
+            variants={slideUp}
             custom={.5}
             initial='initial'
             whileInView='animate'
@@ -47,8 +30,8 @@ const GithubReferrer = () => {
           </motion.h2>
 
           <motion.div 
-            className="relative w-28 h-[1px] mb-9 bg-on-surface"
-            variants={fadeUp}
+            className="relative w-28 h-[1px] mb-9 bg-neutral-100"
+            variants={slideUp}
             custom={.5}
             initial='initial'
             whileInView='animate'
@@ -60,7 +43,7 @@ const GithubReferrer = () => {
 
           <motion.a 
             href='https://github.com/ditramadia' target="_blank" rel="noopener noreferrer"
-            variants={fadeUp}
+            variants={slideUp}
             custom={.5}
             initial='initial'
             whileInView='animate'
