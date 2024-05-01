@@ -14,7 +14,7 @@ const ProjectSection = () => {
           >
             <div className="mb-8 text-center lg:mb-14">
               <h2 className="heading-2 text-light md:heading-1">
-                {project.title}
+                {project.name}
               </h2>
               <p className="body-m text-dim">
                 {project.company} - {project.releaseDate}
