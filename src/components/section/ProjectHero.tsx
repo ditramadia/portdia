@@ -21,7 +21,7 @@ const ProjectHero = (props: ProjectHeroProps) => {
       <motion.div 
         className="absolute top-20 -z-10 w-80 h-28 bg-neutral-100/20 rounded-[100%] blur-3xl"
         variants={fadeIn}
-        custom={1}
+        custom={0.2}
         initial="initial"
         animate="animate"
       />
@@ -39,7 +39,7 @@ const ProjectHero = (props: ProjectHeroProps) => {
         <motion.h2 
           className="body-m text-dim"
           variants={SlideUp}
-          custom={0.5}
+          custom={0.1}
           initial="initial"
           animate="animate"
         >
@@ -50,7 +50,7 @@ const ProjectHero = (props: ProjectHeroProps) => {
       <motion.div 
         className="mt-10 md:mt-20"
         variants={SlideUp}
-        custom={1}
+        custom={0.2}
         initial="initial"
         animate="animate"
       >

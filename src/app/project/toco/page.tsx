@@ -9,6 +9,7 @@ import NavbarBack from "@/components/navigation/NavbarBack";
 import ProjectHero from "@/components/section/ProjectHero";
 import Footer from "@/components/navigation/Footer";
 import ProjectDetails from "@/components/section/ProjectDetails";
+import ProjectHighlights from "@/components/section/ProjectHighlights";
 
 export default function Home() {
   useEffect(() => {
@@ -42,6 +43,10 @@ export default function Home() {
           team={toco.team}
           tools={toco.tools}
           roles={toco.roles}
+        />
+        <ProjectHighlights 
+          description={toco.highlights.description}
+          images={toco.highlights.images}  
         />
       </main>
       <div className="-mt-16">

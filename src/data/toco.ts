@@ -36,9 +36,17 @@ const toco = {
     'Back-End Developer',
   ],
 
-  highlights: [
-    'toco/toco-dark-browser.png'
-  ]
+  highlights: {
+    description: "A web based language learning app with video lessons and exercises. Transaction system that motivates user to improve their language skills",
+    images: [
+     'toco/toco-dark-browser.png',
+     'toco/toco-dark-browser.png',
+     'toco/toco-dark-browser.png',
+     'toco/toco-dark-browser.png',
+     'toco/toco-dark-browser.png',
+     'toco/toco-dark-browser.png',
+   ]
+  }
 };
 
 export default toco;
