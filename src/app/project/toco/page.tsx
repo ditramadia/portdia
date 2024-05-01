@@ -8,6 +8,7 @@ import toco from "@/data/toco";
 import NavbarBack from "@/components/navigation/NavbarBack";
 import ProjectHero from "@/components/section/ProjectHero";
 import Footer from "@/components/navigation/Footer";
+import ProjectDetails from "@/components/section/ProjectDetails";
 
 export default function Home() {
   useEffect(() => {
@@ -31,12 +32,21 @@ export default function Home() {
           image={toco.thumbnail}
           imageAlt="Toco thumbnail"
         />
+        <ProjectDetails 
+          timeline={toco.timeline}
+          summary={toco.summary}
+          description={toco.description}
+          overview={toco.overview}
+          code={toco.code}
+          site={toco.site}
+          team={toco.team}
+          tools={toco.tools}
+          roles={toco.roles}
+        />
       </main>
-      {/* 
-        <div className="-mt-16">
-          <Footer />
-        </div>
-      */}
+      <div className="-mt-16">
+        <Footer />
+      </div>
     </>
   );
 };

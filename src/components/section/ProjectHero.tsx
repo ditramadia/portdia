@@ -1,4 +1,9 @@
-import GlassBrowserWindow from "../display/GlassBrowserWindow";
+import { motion } from "framer-motion";
+
+import SlideUp from "@/transitions/SlideUp";
+import fadeIn from "@/transitions/FadeIn";
+
+import GlassBrowserWindow from "@/components/display/GlassBrowserWindow";
 
 interface ProjectHeroProps {
   name: string,
@@ -13,19 +18,47 @@ const ProjectHero = (props: ProjectHeroProps) => {
 
   return (
     <div className="relative container-base mx-auto mt-32 flex flex-col items-center">
-      <div className="absolute top-20 -z-10 w-80 h-28 bg-neutral-100/20 rounded-[100%] blur-3xl" />
+      <motion.div 
+        className="absolute top-20 -z-10 w-80 h-28 bg-neutral-100/20 rounded-[100%] blur-3xl"
+        variants={fadeIn}
+        custom={1}
+        initial="initial"
+        animate="animate"
+      />
       
       <div className="text-center">
-        <h1 className="heading-2 text-light tracking-[0.25em]">{name}</h1>
-        <h2 className="body-m text-dim">{company} - {releaseDate}</h2>
+        <motion.h1
+          className="heading-2 text-light tracking-[0.25em]"
+          variants={SlideUp}
+          custom={0}
+          initial="initial"
+          animate="animate"
+        >
+          {name}
+        </motion.h1>
+        <motion.h2 
+          className="body-m text-dim"
+          variants={SlideUp}
+          custom={0.5}
+          initial="initial"
+          animate="animate"
+        >
+          {company} - {releaseDate}
+        </motion.h2>
       </div>
 
-      <div className="mt-10 md:mt-20">
+      <motion.div 
+        className="mt-10 md:mt-20"
+        variants={SlideUp}
+        custom={1}
+        initial="initial"
+        animate="animate"
+      >
         <GlassBrowserWindow 
           image={image}
           imageAlt={imageAlt}
         />
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -64,9 +64,10 @@
     font-size: 0.8rem;
   }
 
-  .label {
-    font-family: "Poppins", system-ui;
-    font-weight: 700;
-    font-size: 0.8rem;
+  .label-m {
+    font-family: "Abril Fatface", system-ui;
+    font-weight: 500;
+    font-size: 1rem;
+    @apply tracking-widest;
   }
 }
