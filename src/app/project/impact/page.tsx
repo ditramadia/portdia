@@ -3,8 +3,8 @@
 import { useEffect } from "react";
 import Lenis from '@studio-freight/lenis';
 
-import toco from "@/data/toco";
-import literacyPowerBrief from "@/data/literacyPowerBrief";
+import impact from "@/data/impact";
+import bondomanBrief from "@/data/bondomanBrief";
 
 import NavbarBack from "@/components/navigation/NavbarBack";
 import ProjectHero from "@/components/section/ProjectHero";
@@ -14,7 +14,7 @@ import ProjectHighlights from "@/components/section/ProjectHighlights";
 import NextProject from "@/components/section/NextProject";
 
 export default function page() {
-  const nextProject = literacyPowerBrief;
+  const nextProject = bondomanBrief;
 
   useEffect(() => {
     // Lenis smooth scroll
@@ -31,26 +31,22 @@ export default function page() {
       <NavbarBack backDestination="/" />
       <main>
         <ProjectHero 
-          name={toco.name}
-          company={toco.company}
-          releaseDate={toco.releaseDate}
-          image={toco.thumbnail}
+          name={impact.name}
+          company={impact.company}
+          releaseDate={impact.releaseDate}
+          image={impact.thumbnail}
           imageAlt="Toco thumbnail"
         />
         <ProjectDetails 
-          timeline={toco.timeline}
-          summary={toco.summary}
-          description={toco.description}
-          overview={toco.overview}
-          code={toco.code}
-          site={toco.site}
-          team={toco.team}
-          tools={toco.tools}
-          roles={toco.roles}
-        />
-        <ProjectHighlights 
-          description={toco.highlights.description}
-          images={toco.highlights.images}  
+          timeline={impact.timeline}
+          summary={impact.summary}
+          description={impact.description}
+          overview={impact.overview}
+          code={impact.code}
+          site={impact.site}
+          team={impact.team}
+          tools={impact.tools}
+          roles={impact.roles}
         />
         <NextProject 
           name={nextProject.name}
