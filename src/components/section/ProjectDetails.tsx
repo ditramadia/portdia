@@ -82,16 +82,16 @@ const ProjectDetails = (props: ProjectDetailsProps) => {
       <div className="flex flex-col gap-6 md:flex-row justify-between">
         
         {/* Timeline */}
-        <div className="flex md:flex-col">
-          <h3 className="w-1/3 mb-3 text-light label-m md:w-fit">Timeline</h3>
+        <div className="flex md:flex-col md:w-1/4">
+          <h3 className="w-1/3 mb-3 text-light label-m md:w-full">Timeline</h3>
           <div className="flex flex-col gap-2">
             <p className="text-dim body-m">{timeline}</p>
           </div>
         </div>
 
         {/* Team */}
-        <div className="flex md:flex-col">
-          <h3 className="w-1/3 mb-3 text-light label-m md:w-fit">Team</h3>
+        <div className="flex md:flex-col md:w-1/4">
+          <h3 className="w-1/3 mb-3 text-light label-m md:w-full">Team</h3>
           <div className="flex flex-col gap-2">
             {
               team.map((member, i) => (
@@ -102,8 +102,8 @@ const ProjectDetails = (props: ProjectDetailsProps) => {
         </div>
 
         {/* Tools */}
-        <div className="flex md:flex-col">
-          <h3 className="w-1/3 mb-3 text-light label-m md:w-fit">Tools</h3>
+        <div className="flex md:flex-col md:w-1/4">
+          <h3 className="w-1/3 mb-3 text-light label-m md:w-full">Tools</h3>
           <div className="flex flex-col gap-2">
             {
               tools.map((tool, i) => (
@@ -114,8 +114,8 @@ const ProjectDetails = (props: ProjectDetailsProps) => {
         </div>
 
         {/* My roles */}
-        <div className="flex md:flex-col">
-          <h3 className="w-1/3 mb-3 text-light label-m md:w-fit">My Roles</h3>
+        <div className="flex md:flex-col md:w-1/4">
+          <h3 className="w-1/3 mb-3 text-light label-m md:w-full">My Roles</h3>
           <div className="flex flex-col gap-2">
             {
               roles.map((role, i) => (

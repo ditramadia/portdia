@@ -3,8 +3,8 @@
 import { useEffect } from "react";
 import Lenis from '@studio-freight/lenis';
 
-import toco from "@/data/toco";
-import literacyPowerBrief from "@/data/literacyPowerBrief";
+import literacyPower from "@/data/literacyPower";
+import impactBrief from "@/data/impactBrief";
 
 import NavbarBack from "@/components/navigation/NavbarBack";
 import ProjectHero from "@/components/section/ProjectHero";
@@ -13,8 +13,8 @@ import ProjectDetails from "@/components/section/ProjectDetails";
 import ProjectHighlights from "@/components/section/ProjectHighlights";
 import NextProject from "@/components/section/NextProject";
 
-export default function Home() {
-  const nextProject = literacyPowerBrief;
+export default function page() {
+  const nextProject = impactBrief;
 
   useEffect(() => {
     // Lenis smooth scroll
@@ -31,26 +31,22 @@ export default function Home() {
       <NavbarBack backDestination="/" />
       <main>
         <ProjectHero 
-          name={toco.name}
-          company={toco.company}
-          releaseDate={toco.releaseDate}
-          image={toco.thumbnail}
-          imageAlt="Toco thumbnail"
+          name={literacyPower.name}
+          company={literacyPower.company}
+          releaseDate={literacyPower.releaseDate}
+          image={literacyPower.thumbnail}
+          imageAlt="Literacy Power thumbnail"
         />
         <ProjectDetails 
-          timeline={toco.timeline}
-          summary={toco.summary}
-          description={toco.description}
-          overview={toco.overview}
-          code={toco.code}
-          site={toco.site}
-          team={toco.team}
-          tools={toco.tools}
-          roles={toco.roles}
-        />
-        <ProjectHighlights 
-          description={toco.highlights.description}
-          images={toco.highlights.images}  
+          timeline={literacyPower.timeline}
+          summary={literacyPower.summary}
+          description={literacyPower.description}
+          overview={literacyPower.overview}
+          code={literacyPower.code}
+          site={literacyPower.site}
+          team={literacyPower.team}
+          tools={literacyPower.tools}
+          roles={literacyPower.roles}
         />
         <NextProject 
           name={nextProject.name}
