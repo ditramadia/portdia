@@ -1,52 +1,36 @@
-const toco = {
-  name: "Toco",
+const openGanteng = {
+  name: "Open Ganteng",
   company: "University project",
   type: "webapp",
-  timeline: "Oct - Nov 2023",
-  releaseDate: "November 2023",
-  url: "/project/toco",
+  timeline: "Mar - Apr 2024",
+  releaseDate: "April 2024",
+  url: "/project/open-ganteng",
   thumbnail: "toco/toco-glass-browser.png",
 
-  summary: "Toco Language Learning App",
-  description: "Language learning platform with four microservices",
+  summary: "Open Ganteng Graphics Editor",
+  description: "Web based graphic editor software",
   overview: [
-    "While taking web based application development course, we had an opportunity to create a multi-service web app. The mission was to make a web app that has a client-side application, admin application, and a secured transaction system. We decided to create a language learning app where users can choose a variety of languages and then work through a series of video lessons and exercises to improve their vocabulary, phrases, grammar, and pronunciation. Users can track their progress over time. Admins are able to create courses, upload new video, create exercises, manage merchandise, and voucher codes. The transaction system uses gems as the currency and they are used to buy merchandises. We use a soap service to secure the transactions and communication between services.",
+    "One of the most exciting project I have ever taken in university so far must be Open Ganteng Graphics Editor. It is a project given to us by taking Computer Graphics course. The mission of the project was to make a 2D CAD-like application utilizing WebGL. We decided to make a web based graphics editor, taking a lot of inspiration from Figma.",
+    "We learned a lot about graphics by exploring and developing the app, as it is a new territory for us. We had to learn shaders, rendering pipelines, and matrix operations before we even start the project. After we understood the basic of WebGL, the project turns out to be a lot of fun. We kept exploring and experimenting on utilizing WebGL to make the app as intuitive as possible."
   ],
-  code: "https://github.com/ditramadia/toco",
-  site: "",
+  code: "https://github.com/ditramadia/opengntg-graphic-editor",
+  site: "https://opengntg-graphic-editor.vercel.app/",
   team: [
     'Ditra Amadia',
     'Bernardus Willson',
-    'Raditya Abiyu',
+    'Fahrian Afdholi',
   ],
   tools: [
-    'Figma',
-    'PHP',
-    'React.js',
-    'Tailwind CSS',
-    'Express.js',
-    'Java SOAP',
-    'MySQL',
-    'PostgreSQL',
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'WebGL',
   ],
   roles: [
     'Project Manager',
     'UI/UX Designer',
     'Front-End Developer',
-    'Back-End Developer',
   ],
-
-  highlights: {
-    description: "A web based language learning app with video lessons and exercises. Transaction system that motivates user to improve their language skills",
-    images: [
-     'toco/toco-dark-browser.png',
-     'toco/toco-dark-browser.png',
-     'toco/toco-dark-browser.png',
-     'toco/toco-dark-browser.png',
-     'toco/toco-dark-browser.png',
-     'toco/toco-dark-browser.png',
-   ]
-  }
 };
 
-export default toco;
+export default openGanteng;
