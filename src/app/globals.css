@@ -18,6 +18,10 @@
   }
 
   .container-base {
-    @apply max-w-[1400px] w-[95%] md:w-11/12;
+    @apply max-w-[1400px] w-[95%] mx-auto md:w-11/12;
+  }
+
+  .container-sm {
+    @apply max-w-[800px] w-[95%] mx-auto md:w-11/12;
   }
 }
