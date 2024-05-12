@@ -51,6 +51,7 @@ export default function page() {
         <ProjectHighlights 
           description={toco.highlights.description}
           images={toco.highlights.images}  
+          type={toco.type}
         />
         <NextProject 
           name={nextProject.name}
@@ -60,6 +61,7 @@ export default function page() {
           summary={nextProject.summary}
           url={nextProject.url}
           thumbnail={nextProject.thumbnail}
+          thumbnail2={nextProject.thumbnail2}
         />
       </main>
       <div className="-mt-16">

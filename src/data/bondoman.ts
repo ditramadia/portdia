@@ -5,7 +5,7 @@ const bondoman = {
   timeline: "Mar - Apr 2024",
   releaseDate: "April 2023",
   url: "/project/bondoman",
-  thumbnail: "toco/toco-glass-browser.png",
+  thumbnail: "bondoman/bondoman-glass-mobile.png",
 
   summary: "Bondoman Wallet App",
   description: "Wallet mobile app that helps users track their income and expenses",
@@ -31,14 +31,16 @@ const bondoman = {
   ],
 
   highlights: {
-    description: "Track your income, expenses, and savings. Or, scan a payment bill to automatically track it. Analyze your transaction records through statistics.",
+    description: "Track your income, expenses, and savings. Or, scan a payment bill to automatically track it. Analyze your transaction records through statistics",
     images: [
-     'toco/toco-dark-browser.png',
-     'toco/toco-dark-browser.png',
-     'toco/toco-dark-browser.png',
-     'toco/toco-dark-browser.png',
-     'toco/toco-dark-browser.png',
-     'toco/toco-dark-browser.png',
+     'bondoman/bondoman-splash-dark-phone.png',
+     'bondoman/bondoman-login-dark-phone.png',
+     'bondoman/bondoman-home-dark-phone.png',
+     'bondoman/bondoman-new-dark-phone.png',
+     'bondoman/bondoman-delete-dark-phone.png',
+     'bondoman/bondoman-scan-dark-phone.png',
+     'bondoman/bondoman-statistics-dark-phone.png',
+     'bondoman/bondoman-settings-dark-phone.png',
    ]
   }
 };

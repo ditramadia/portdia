@@ -5,7 +5,7 @@ const literacyPower = {
   timeline: "May 2022 - Sept 2023",
   releaseDate: "September 2023",
   url: "/project/literacy-power",
-  thumbnail: "toco/toco-glass-browser.png",
+  thumbnail: "lpi/lpi-glass-browser.png",
 
   summary: "Literacy Power Indonesia",
   description: "Official website of Literacy Power Indonesia",

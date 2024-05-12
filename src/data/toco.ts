@@ -39,12 +39,15 @@ const toco = {
   highlights: {
     description: "A web based language learning app with video lessons and exercises. Transaction system that motivates user to improve their language skills",
     images: [
-     'toco/toco-dark-browser.png',
-     'toco/toco-dark-browser.png',
-     'toco/toco-dark-browser.png',
-     'toco/toco-dark-browser.png',
-     'toco/toco-dark-browser.png',
-     'toco/toco-dark-browser.png',
+     'toco/toco-login-dark-browser.png',
+     'toco/toco-learn-dark-browser.png',
+     'toco/toco-module-dark-browser.png',
+     'toco/toco-video-dark-browser.png',
+     'toco/toco-exercise-dark-browser.png',
+     'toco/toco-merchandise-dark-browser.png',
+     'toco/toco-transactions-dark-browser.png',
+     'toco/toco-admin-dark-browser.png',
+     'toco/toco-admin-2-dark-browser.png',
    ]
   }
 };

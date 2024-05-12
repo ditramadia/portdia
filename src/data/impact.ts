@@ -5,7 +5,7 @@ const impact = {
   timeline: "Mar - Jun 2022",
   releaseDate: "June 2022",
   url: "/project/impact",
-  thumbnail: "toco/toco-glass-browser.png",
+  thumbnail: "impact/impact-glass-browser.png",
 
   summary: "Impact Metanoia",
   description: "Website for IMPACT Metanoia, A national competition event for highschoolers",

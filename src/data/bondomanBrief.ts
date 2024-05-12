@@ -7,7 +7,7 @@ const bondomanBrief = {
   description: "Wallet mobile app that helps users track their income and expenses",
   url: "/project/bondoman",
   thumbnail: "bondoman/bondoman-dark-phone.png",
-  thumbnail2: "bondoman/bondoman-dark-phone.png",
+  thumbnail2: "bondoman/bondoman-2-dark-phone.png",
 };
 
 export default bondomanBrief;

@@ -11,10 +11,11 @@ interface NextProjectProps {
   summary: string,
   url: string,
   thumbnail: string,
+  thumbnail2: string,
 }
 
 const NextProject = (props: NextProjectProps) => {
-  const { name, company, releaseDate, type, summary, url, thumbnail } = props;
+  const { name, company, releaseDate, type, summary, url, thumbnail, thumbnail2 } = props;
 
   return (
     <div className='mt-48'>
@@ -31,6 +32,7 @@ const NextProject = (props: NextProjectProps) => {
         description={summary}
         url={url}
         thumbnail={thumbnail}
+        thumbnail2={thumbnail2}
       />
     </div>
   )

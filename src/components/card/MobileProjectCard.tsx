@@ -11,10 +11,11 @@ interface MobileProjectCardProps {
   cardSubtitle: string,
   url: string,
   thumbnail: string,
+  thumbnail2: string,
 };
 
 const MobileProjectCard = (props: MobileProjectCardProps) => {
-  const { cardTitle, cardSubtitle, url, thumbnail} = props;
+  const { cardTitle, cardSubtitle, url, thumbnail, thumbnail2} = props;
   
   return (
     <div className="relative max-w-[900px] w-full h-fit mb-52 overflow-hidden flex flex-col items-center lg:h-[500px] lg:rounded-3xl lg:flex-row lg:gap-0">
@@ -42,7 +43,7 @@ const MobileProjectCard = (props: MobileProjectCardProps) => {
           viewport={{ once: true }}
         >
           <DarkPhoneFrame 
-            image={thumbnail}
+            image={thumbnail2}
             imageAlt={`${cardTitle} thumbnail`}
           />
         </motion.div>

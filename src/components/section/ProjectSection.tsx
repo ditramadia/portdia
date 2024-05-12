@@ -1,6 +1,6 @@
 import projects from "@/data/projectBrief";
 
-import ProjectShowcase from "../display/ProjectShowcase";
+import ProjectShowcase from "@/components/display/ProjectShowcase";
 
 const ProjectSection = () => {
   return (
@@ -17,6 +17,7 @@ const ProjectSection = () => {
             description={project.description}
             url={project.url}
             thumbnail={project.thumbnail}
+            thumbnail2={project.thumbnail2}
           />
         ))
       }

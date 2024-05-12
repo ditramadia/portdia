@@ -5,7 +5,7 @@ const openGanteng = {
   timeline: "Mar - Apr 2024",
   releaseDate: "April 2024",
   url: "/project/open-ganteng",
-  thumbnail: "toco/toco-glass-browser.png",
+  thumbnail: "open-gntg/opengntg-glass-browser.png",
 
   summary: "Open Ganteng Graphics Editor",
   description: "Web based graphic editor software",

@@ -48,7 +48,7 @@ const ProjectHero = (props: ProjectHeroProps) => {
       </div>
 
       <motion.div 
-        className="mt-10 md:mt-20"
+        className="max-w-[1000px] mt-10 md:mt-20"
         variants={SlideUp}
         custom={0.2}
         initial="initial"

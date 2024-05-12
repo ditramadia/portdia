@@ -7,6 +7,7 @@ const literacyPowerBrief = {
   description: "Official website of Literacy Power Indonesia, an organization that focuses on empowering Indonesians through the power of literacy",
   url: "/project/literacy-power",
   thumbnail: "lpi/lpi-dark-browser.png",
+  thumbnail2: "",
 };
 
 export default literacyPowerBrief;

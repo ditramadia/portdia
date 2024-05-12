@@ -56,6 +56,7 @@ export default function page() {
           summary={nextProject.summary}
           url={nextProject.url}
           thumbnail={nextProject.thumbnail}
+          thumbnail2={nextProject.thumbnail2}
         />
       </main>
       <div className="-mt-16">

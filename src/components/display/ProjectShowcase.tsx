@@ -9,11 +9,12 @@ interface ProjectShowcaseProps {
   summary: string,
   description: string,
   url: string,
-  thumbnail: string
+  thumbnail: string,
+  thumbnail2?: string
 };
 
 const ProjectShowcase = (props: ProjectShowcaseProps) => {
-  const { name, company, releaseDate, type, summary, description, url, thumbnail } = props;
+  const { name, company, releaseDate, type, summary, description, url, thumbnail, thumbnail2 } = props;
 
   return (
     <div
@@ -37,12 +38,13 @@ const ProjectShowcase = (props: ProjectShowcaseProps) => {
         />
       }
       {
-        type === 'mobileapp' &&
+        type === 'mobileapp' && thumbnail2 &&
         <MobileProjectCard
           cardTitle={summary}
           cardSubtitle={description}
           url={url}
           thumbnail={thumbnail}
+          thumbnail2={thumbnail2}
         />
       }
     </div>

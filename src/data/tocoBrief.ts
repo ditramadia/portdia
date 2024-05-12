@@ -7,6 +7,7 @@ const tocoBrief = {
   description: "Language learning platform with four microservices",
   url: "/project/toco",
   thumbnail: "toco/toco-dark-browser.png",
+  thumbnail2: "",
 };
 
 export default tocoBrief;

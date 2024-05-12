@@ -4,11 +4,12 @@ import StarIcon from "../icons/StarIcon";
 
 interface ProjectHighlightsProps {
   description: string,
-  images: string[]
+  images: string[],
+  type: string
 };
 
 const ProjectHighlights = (props: ProjectHighlightsProps) => {
-  const { description, images } = props;
+  const { description, images, type } = props;
 
   return (
     <div className="container-sm my-24">
@@ -23,16 +24,18 @@ const ProjectHighlights = (props: ProjectHighlightsProps) => {
         <h2 className="heading-4 text-light text-center">{description}</h2>
       </div>
 
-      <div className="flex flex-col gap-10 md:gap-20">
+      <div className={`w-full flex ${type === 'mobileapp' ? 'flex-row flex-wrap' : 'flex-col'} items-center justify-center gap-10 md:gap-20`}>
         {
           images.map((image, i) => (
-            <Image
-              src={`/images/${image}`}
-              alt={`Project highlight ${i + 1}`}
-              width={0}
-              height={0}
-              layout="responsive"
-            />
+           <div className={` ${type === 'mobileapp' ? 'max-w-[280px]' : ''}`}>
+              <Image
+                src={`/images/${image}`}
+                alt={`Project highlight ${i + 1}`}
+                width={0}
+                height={0}
+                layout="responsive"
+              />
+            </div>
           ))
         }
       </div>
