@@ -1,6 +1,6 @@
 "use client";
 
-import Navbar from "@/components/organism/Navbar";
+import Navbar from "@/components/navigation/Navbar";
 
 export default function About() {
   return (
