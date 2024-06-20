@@ -18,7 +18,7 @@ const DotHeader = (props: DotHeaderProps) => {
         <h2 className={`${alignment === 'center' && '-mt-2'} bold-m text-dim`}>{title}</h2>
       </div>
       
-      <h3 className={`${alignment === 'left' && 'ml-4'} heading-5 text-light`}>{subtitle}</h3>
+      <h3 className={`${alignment === 'left' && 'ml-4'} heading-5 text-light md:heading-3`}>{subtitle}</h3>
     </div>
   );
 };
