@@ -5,9 +5,10 @@ import Navbar from "@/components/navigation/Navbar";
 export default function About() {
   return (
     <>
+      <Navbar active="about"/>
+      
       <main>
-        <Navbar active="about"/>
-        {/* <h1 className="text-white">About</h1> */}
+        
       </main>
     </>
   );
