@@ -17,7 +17,7 @@ export default function About() {
         <ExperienceSection />
       </main>
 
-      <div>
+      <div className="mt-12 md:mt-36">
         <Footer />
       </div>
     </>

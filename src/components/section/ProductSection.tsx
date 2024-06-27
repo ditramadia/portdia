@@ -18,7 +18,7 @@ const ProductSection = () => {
               key={product.id}
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 * product.id, ease: 'easeInOut' }}
+              transition={{ duration: 0.5, delay: 0.6 + 0.1 * product.id, ease: 'easeInOut' }}
               viewport={{ once: true }}
             >
               <ProductCard title={product.title} description={product.description} image={product.image} />
