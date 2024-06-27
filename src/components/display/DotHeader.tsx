@@ -12,13 +12,13 @@ const DotHeader = (props: DotHeaderProps) => {
   const { alignment, title, subtitle } = props;
 
   return (
-    <div className={`flex flex-col ${alignment === 'center' && 'items-center gap-4' || alignment === 'left' && 'items-left'}`}>
-      <div className={`flex ${alignment === 'center' && 'flex-col items-center' || alignment === 'left' && 'flex-row justify-start items-center'}`}>
+    <div className={`flex flex-col items-center gap-4 ${alignment === 'left' && 'md:gap-0 md:items-start'}`}>
+      <div className={`flex flex-col items-center ${alignment === 'left' && 'md:flex-row md:justify-start md:items-center'}`}>
         <GlowingCircleIcon className="w-14" />
         <h2 className={`${alignment === 'center' && '-mt-2'} bold-m text-dim`}>{title}</h2>
       </div>
       
-      <h3 className={`${alignment === 'left' && 'ml-4'} heading-5 text-light md:heading-3`}>{subtitle}</h3>
+      <h3 className={`${alignment === 'left' && 'md:ml-4'} heading-5 text-light md:heading-3`}>{subtitle}</h3>
     </div>
   );
 };
