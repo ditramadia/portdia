@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 interface ProductCardProps {
@@ -16,7 +17,9 @@ const ProductCard = (props: ProductCardProps) => {
         <p className='mt-2 body-m text-dim'>{description}</p>
       </div>
 
-      <div className='mt-4 bg-surface-container overflow-hidden w-full h-48 rounded-lg md:bg-surface'></div>
+      <div className='relative mt-4 overflow-hidden w-full h-48 rounded-lg'>
+        <Image src={image} alt={title} fill />
+      </div>
     </div>
   );
 };

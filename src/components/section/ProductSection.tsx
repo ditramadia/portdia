@@ -11,7 +11,7 @@ const ProductSection = () => {
     <div className='container-sm mt-36 flex flex-col items-center md:container-base'>
       <DotHeader alignment='center' title='PRODUCTS' subtitle='What I can give you.'/>
 
-      <div className='mt-16 flex flex-col gap-12 items-center md:flex-row md:mt-20 md:gap-6'>
+      <div className='mt-16 flex flex-col gap-12 items-center lg:flex-row lg:mt-20 lg:gap-6'>
         {
           products.map((product) => (
             <motion.div 
