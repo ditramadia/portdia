@@ -127,12 +127,15 @@ const WorkHero = () => {
                 translateY: header5YPos,
               }}
             >
-              I am a full-stack developer specializing in <br />
+              I am a full-stack developer, crafting <br />
               <span className="text-tertiary abril-fatface italic">
-                Front-End
+                Fun
               </span>{" "}
               and{" "}
-              <span className="text-tertiary abril-fatface italic">Motion</span>
+              <span className="text-tertiary abril-fatface italic">
+                Innovative
+              </span>
+              {" "}projects with code
             </motion.h5>
           </div>
 

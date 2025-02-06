@@ -21,7 +21,7 @@ const AboutHero = () => {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: 'easeInOut', delay: 0.2}}
-          >Full Stack Developer with over 3 years of experience, majoring in computer science at Institut Teknologi Bandung</motion.h2>
+          >Full Stack Developer, currently majoring in informatics engineering at Institut Teknologi Bandung</motion.h2>
         </div>
 
         <motion.div 
@@ -41,20 +41,20 @@ const AboutHero = () => {
 
       <div className='h-72 flex gap-5 md:absolute md:right-0 md:top-32'>
         <motion.div 
-          className='relative top-14 w-24 h-52 md:w-40 md:h-96 md:top-20 md:opacity-60'
+          className='relative top-14 w-32 h-72 md:w-40 md:h-96 md:top-20 md:opacity-60'
           initial={{ opacity: 0, y: 48 }}
-          animate={{ opacity: 0.6, y: 0 }}
+          animate={{ opacity: 0.8, y: 0 }}
           transition={{ duration: 0.5, ease: 'easeInOut', delay: 1}}
         >
-          <Image src="/images/ditra-1.png" alt='Picture of me' fill style={{objectFit: "cover"}}  draggable={false} />
+          <Image src="/images/ditra-1.jpg" alt='A picture of me' fill style={{objectFit: "cover"}}  draggable={false} />
         </motion.div>
         <motion.div 
-          className='relative w-24 h-52 md:w-40 md:h-96 md:opacity-60'
+          className='relative w-32 h-72 md:w-40 md:h-96 md:opacity-60'
           initial={{ opacity: 0, y: 48 }}
           animate={{ opacity: 0.6, y: 0 }}
           transition={{ duration: 0.5, ease: 'easeInOut', delay: 1.2}}
         >
-          <Image src="/images/itb-1.png" alt='Picture of me' fill style={{objectFit: "cover"}} draggable={false} />
+          <Image src="/images/itb-1.png" alt='ITB, my university' fill style={{objectFit: "cover"}} draggable={false} />
         </motion.div>
       </div>
     </div>

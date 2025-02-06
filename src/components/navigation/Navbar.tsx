@@ -30,7 +30,7 @@ function Navbar(props: NavbarProps) {
         {/* Navigation Toggle */}
         <NavToggle active={active}/>
 
-        <a href="https://drive.google.com/file/d/1CRswzCp9LZNwNbTxMcPSmIMR6LAXf0Ng/view?usp=sharing" rel="noopener noreferrer" target="_blank">
+        <a href="https://drive.google.com/file/d/1VO5b1dfRGeDprAOxrtbV12lZ_yhcjnjf/view?usp=sharing" rel="noopener noreferrer" target="_blank">
           <div className="absolute top-0 right-0 h-full flex items-center">
 
             {/* Resume button for small screen */}
