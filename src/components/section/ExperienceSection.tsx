@@ -13,7 +13,7 @@ const ExperienceSection = () => {
     <div className='container-sm mt-36 flex flex-col md:container-base md:mt-64'>
       <DotHeader alignment='center' title='EXPERIENCE' subtitle='My Professional Experience.'/>
     
-      <div className='w-11/12 mx-auto mt-16 flex flex-col items-center gap-12 lg:mt-20 lg:gap-6'>
+      <div className='w-11/12 mx-auto my-16 flex flex-col items-center gap-12 lg:mt-20 lg:gap-6'>
         {
           experiences.map((experience, index) => (
             <motion.div
