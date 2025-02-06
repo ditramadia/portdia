@@ -9,7 +9,7 @@ import products from '@/data/products';
 const ProductSection = () => {
   return (
     <div className='container-sm mt-36 flex flex-col items-center md:container-base'>
-      <DotHeader alignment='center' title='PRODUCTS' subtitle='What I can give you.'/>
+      <DotHeader alignment='center' title='SKILLS' subtitle='What I am good at.'/>
 
       <div className='mt-16 flex flex-col gap-12 items-center lg:flex-row lg:mt-20 lg:gap-6'>
         {
