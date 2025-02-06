@@ -1,8 +1,4 @@
-<<<<<<< HEAD
+
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M2.61925 23.9364L19.9602 6.59539L19.9334 19.4472L23.5451 19.4549L23.5847 0.414047L4.54517 0.454914L4.55284 4.06666L17.4085 4.03856L0.0649757 21.3821L2.61925 23.9364Z" fill="#F6F6F9"/>
-=======
-<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M1.96725 13.8653L11.5683 4.2642L11.5535 11.3798L13.5532 11.384L13.5751 0.841806L3.03357 0.864434L3.03781 2.86413L10.1555 2.84857L0.553034 12.4511L1.96725 13.8653Z" fill="#F6F6F9"/>
->>>>>>> master
+<path fillRule="evenodd" clipRule="evenodd" d="M2.61925 23.9364L19.9602 6.59539L19.9334 19.4472L23.5451 19.4549L23.5847 0.414047L4.54517 0.454914L4.55284 4.06666L17.4085 4.03856L0.0649757 21.3821L2.61925 23.9364Z" fill="#F6F6F9"/>
 </svg>

@@ -99,9 +99,9 @@ const WorkHero = () => {
         whileInView="enter"
         viewport={{ once: true }}
       >
-        <div className="absolute w-[800px] h-[800px] md:w-[1100px] md:h-[1100px]">
-          <div className="absolute z-20 -inset-6 rounded-full bg-primary/30 blur-2xl" />
-          <div className="absolute z-20 inset-0 rounded-full bg-gradient-to-b from-primary to-neutral-900 to-70%" />
+        <div className="absolute overflow-x-hidden w-full h-[800px] md:overflow-visible md:w-[1100px] md:h-[1100px]">
+          <div className="absolute -left-1/2 z-20 w-[776px] h-[776px] rounded-full bg-primary/30 blur-2xl md:w-[1076px] md:h-[1076px] md:left-0" />
+          <div className="absolute -left-1/2 z-20 w-[800px] h-[800px] rounded-full bg-gradient-to-b from-primary to-neutral-900 to-70% md:w-[1100px] md:h-[1100px] md:left-0" />
         </div>
       </motion.div>
 
@@ -127,12 +127,15 @@ const WorkHero = () => {
                 translateY: header5YPos,
               }}
             >
-              I am a full-stack developer specializing in <br />
+              I am a full-stack developer, crafting <br />
               <span className="text-tertiary abril-fatface italic">
-                Front-End
+                Fun
               </span>{" "}
               and{" "}
-              <span className="text-tertiary abril-fatface italic">Motion</span>
+              <span className="text-tertiary abril-fatface italic">
+                Innovative
+              </span>
+              {" "}projects with code
             </motion.h5>
           </div>
 

@@ -57,6 +57,18 @@
     font-size: 1.2rem;
   }
 
+  .bold-m {
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+  .body-l {
+    font-family: "Poppins", system-ui;
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+
   p,
   .body-m {
     font-family: "Poppins", system-ui;
