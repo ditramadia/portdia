@@ -22,6 +22,7 @@ const ExperienceSection = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, ease: 'easeInOut', delay: 0.6 }}
               viewport={{ once: true }}
+              className='w-full max-w-[800px]'
             >
               <ExperienceCard 
                 key={index}

@@ -21,7 +21,7 @@ const AboutHero = () => {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: 'easeInOut', delay: 0.2}}
-          >Full Stack Developer with over 3 years of experience, majoring in computer science at Institut Teknologi Bandung</motion.h2>
+          >Full Stack Developer, currently majoring in informatics engineering at Institut Teknologi Bandung</motion.h2>
         </div>
 
         <motion.div 
